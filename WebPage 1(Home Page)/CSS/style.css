@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 74px;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.nav-list{
+    width: 70%;
+    /* background-color: black; */
+    display: flex; 
+    align-items: center;
+}
+
+.nav-list li{
+    list-style-type: none;
+    padding: 25px 20px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav-list li a:hover{
+    color: rgb(255, 251, 14);
+}
+.rightnav{
+    width: 50%;
+    text-align: right;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    font-size: 20px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    width: 30%;
+}
+.btn-sm{
+    font-size: 23px;
+    padding: 4px;
+    margin: 20px;
+}
+
+.background{
+    background: rgba(219, 63, 63, 0.7) url("../Images/img1.png");
+    background-size: cover;
+}
+.firstsection{
+    height: 100vh;
+
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    height: 80%;
+    
+}
+#img1{
+    width: 60%;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+.firsthalf{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secondhalf{
+    width: 30%;
+}
+.text-big{
+    font-size: 65px;
+
+}
+.text-small{
+    font-size: 21px;
+
+}
+.buttons .btn{
+    font-size: 28px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    margin: 20px 0px;
+    background: none;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+}
+.thumbimg{
+    width: 40vh;
+    border-radius: 40px;
+    border:3px solid yellow;
+}
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    margin: auto;
+
+}
+.sectag{
+    font-size: 70px;
+}
+.secsubtag{
+    font-size: 20px;
+    padding: 20px 0px;
+    padding-right: 20px;
+}
+.paragraph{
+    padding: 10px;
+}
+.secleft{
+    flex-direction: row-reverse;
+
+}
+.thumbnail{
+    padding: 30px;
+}
+.contact{
+    background-color: whitesmoke;
+    height: 120vh;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+.form{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.form-input{
+    margin:30px;
+    width: 85%;
+    border: 3px solid grey;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+}
+.btnsubmit{
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+    width: 30%;
+    border: 3px solid black;
+    color: black;
+    outline: none;
+}
+.btnsubmit:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+}
+.text-input{
+    resize: none;
+}
+.footer-text{
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+/* HamBurger */
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+}
+
+
+
+/* Responsive */
+
+
+@media only screen and (max-width:1070px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 500px;
+        transition: all 0.7s ease-out;
+    
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .rightnav{
+        flex-direction: column;
+        width: 40%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+        height: 100%;
+        text-align: center;
+    }
+    .thumbimg{
+        width: 25vh;
+    }
+    .footer-text{
+        font-size: 17px;
+    }
+    .firstsection{
+        height: 120vh;
+    }
+}
+
+
+@media only screen and (max-width:736px){
+    .firstsection{
+        height: 142vh;
+    }
+    .contact{
+        height: 120vh;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 500px;
+        transition: all 0.7s ease-out;
+    
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .rightnav{
+        flex-direction: column;
+        width: 40%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+        height: 100%;
+        text-align: center;
+    }
+    .thumbimg{
+        width: 25vh;
+    }
+    .footer-text{
+        font-size: 17px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:500px ){
+    .mainpage{
+        width: 100%;
+    }
+    .firstsection{
+        height: 127vh;
+    }
+    .contact{
+        height: 136vh;
+    }
+    .firsthalf{
+        width: 88%;
+
+        /* margin-top: -331px; */
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 500px;
+        transition: all 0.7s ease-out;
+    
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 30px;
+        height: 71%;
+    }
+    .rightnav{
+        flex-direction: column;
+        width: 40%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+        height: 100%;
+        text-align: center;
+    }
+    .thumbimg{
+        width: 25vh;
+    }
+    .footer-text{
+        font-size: 17px;
+    }
+    .text-big{
+        font-size: 44px;
+    }
+    .form-input{
+        width: 70%;
+    }
+    .btnsubmit{
+        padding: 3px;
+        font-size: 25px;
+    }
+
+}
+
+
+
